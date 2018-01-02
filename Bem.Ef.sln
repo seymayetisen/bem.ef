@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bem.Ef.Data", "Bem.Ef.Data\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bem.Ef.Web", "Bem.Ef.Web\Bem.Ef.Web.csproj", "{A1223418-C35C-4068-870E-CFF870B1F153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bem.Ef.Data.Ef", "Bem.Ef.Data.Ef\Bem.Ef.Data.Ef.csproj", "{50839869-70B2-42AA-A9D8-D713729A3254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bem.Ef.Models", "Bem.Ef.Models\Bem.Ef.Models.csproj", "{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A1223418-C35C-4068-870E-CFF870B1F153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1223418-C35C-4068-870E-CFF870B1F153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1223418-C35C-4068-870E-CFF870B1F153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50839869-70B2-42AA-A9D8-D713729A3254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50839869-70B2-42AA-A9D8-D713729A3254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50839869-70B2-42AA-A9D8-D713729A3254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50839869-70B2-42AA-A9D8-D713729A3254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
