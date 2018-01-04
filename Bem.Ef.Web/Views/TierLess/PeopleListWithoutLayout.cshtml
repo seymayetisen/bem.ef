@@ -1,0 +1,34 @@
+﻿@using System.Data;
+@using System.Configuration
+@using System.Data.SqlClient
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ConfigurationManager.AppSettings["title"]</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @{
+                using (var sqlConn = new SqlConnection("Data Source=DESKTOP-S3O5AOR;Initial Catalog=Zimmet;Integrated Security=True"))
+                {
+                    var sqlCommand = new SqlCommand("SELECT * FROM Person", sqlConn);
+                    sqlConn.Open();
+                    var rdr = sqlCommand.ExecuteReader();
+
+                    while (rdr.Read())
+                    {
+                        <li>@rdr["Name"] @rdr["LastName"] @rdr["IdentityNumber"]</li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+</body>
+</html>

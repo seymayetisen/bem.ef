@@ -22,7 +22,9 @@ namespace Bem.Ef.Data.Ef.Repository
         {
             using (var context = CreateContext())
             {
-                return context.Person.Where(i=>i.Items.Any()).ToList();
+                return context.Person
+                    //.Where(i=>i.Items.Any())
+                    .ToList();
             }
         }
 
@@ -30,7 +32,9 @@ namespace Bem.Ef.Data.Ef.Repository
         {
             using (var context = CreateContext())
             {
-                return context.Person.Where(i => !i.Items.Any()).ToList();
+                return context.Person
+                    //.Where(i => !i.Items.Any())
+                    .ToList();
             }
         }
 

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Bem.Ef.Web.Models.Person>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PeopleHaveItemListWithoutLayout</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item.FirstName @item.LastName</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

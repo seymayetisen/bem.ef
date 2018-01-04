@@ -1,0 +1,25 @@
+﻿@model Bem.Ef.Web.Models.PersonDeteailVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PersonDetail</title>
+</head>
+<body>
+    <div> 
+        <div>@Model.Person.FirstName @Model.Person.LastName</div>
+    </div>
+
+    <ul>
+        @foreach (var item in Model.Items)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+</body>
+</html>

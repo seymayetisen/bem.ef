@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Bem.Ef.Models.Person>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item.FirstName @item.LastName @item.IdentityNumber @item.BirthDate</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

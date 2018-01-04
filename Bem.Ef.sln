@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bem.Ef.Data.Ef", "Bem.Ef.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bem.Ef.Models", "Bem.Ef.Models\Bem.Ef.Models.csproj", "{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bem.Ef.EfLayer", "Bem.Ef.EfLayer\Bem.Ef.EfLayer.csproj", "{774C503A-1467-4D7B-8DD5-1C74744F9967}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B2912B0-A7CD-4300-8CF3-E18735BDBAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774C503A-1467-4D7B-8DD5-1C74744F9967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774C503A-1467-4D7B-8DD5-1C74744F9967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774C503A-1467-4D7B-8DD5-1C74744F9967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774C503A-1467-4D7B-8DD5-1C74744F9967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
