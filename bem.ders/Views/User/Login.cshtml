@@ -23,7 +23,7 @@
         $('#Ok').on('click', function () {
             $.ajax({
                 url: '/user/Lessons',
-                method: 'get',
+                method: 'POST',
                 data: { UserName: $('#userName').val(), Sifre: $('#sifre').val() },
                 success: function (d) {
                     //$('#result').html(JSON.stringify(d));
