@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div> 
+        Kullanici Adi:<input id="userName" type="text" name="userName" value="" /><br />
+        Şifre:<input id="sifre" type="text" name="sifre" value="" /><br />
+        <input id="Ok" type="button" name="Okey" value="Giriş" />
+
+    </div>
+    
+    <script src="~/Content/jquery-1.10.2.min.js"></script>
+    <script>
+        $('#Ok').on('click', function () {
+            $.ajax({
+                url: '/user/Lessons',
+                method: 'get',
+                data: { UserName: $('#userName').val(), Sifre: $('#sifre').val() },
+                success: function (d) {
+                    //$('#result').html(JSON.stringify(d));
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
