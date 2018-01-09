@@ -14,7 +14,7 @@ namespace bem.ders.Models
         
 
 
-        public LessonContext():base("Data Source=DESKTOP-SON6OA8;Initial Catalog=Lessons;Integrated Security=True")
+        public LessonContext():base("Data Source=DESKTOP-S3O5AOR;Initial Catalog=Lessons;Integrated Security=True")
         {
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<ZimmetContext, Configuration>());
 
@@ -31,8 +31,6 @@ namespace bem.ders.Models
                     Password="12345",
                     Name="seyma",
                     Surname="yetisen"
-
-
                 };
                 Lesson Lesson1 = new Lesson
                 {

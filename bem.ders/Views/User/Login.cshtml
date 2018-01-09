@@ -17,18 +17,38 @@
         <input id="Ok" type="button" name="Okey" value="Giriş" />
 
     </div>
+    <div >
+        <ul id="dersler">
+            
+        </ul>
+
+    </div>
     
     <script src="~/Content/jquery-1.10.2.min.js"></script>
     <script>
+        function dersleriGetir(lessons) {
+            for (var i = 0; i < lessons.length; i++) {
+                var lesson = lessons[i];
+                var soruLi = $('<li></li>');
+                soruLi.append(lesson.Name);
+
+                soruLi.appendTo('#dersler');
+                
+
+            }
+
+        }
         $('#Ok').on('click', function () {
             $.ajax({
                 url: '/user/Lessons',
                 method: 'POST',
                 data: { UserName: $('#userName').val(), Sifre: $('#sifre').val() },
                 success: function (d) {
-                    //$('#result').html(JSON.stringify(d));
+                    dersleriGetir(d);
+                    
                 }
             });
+            //window.location.href = '~/User/Lessons.cshtml';
         });
 
     </script>
