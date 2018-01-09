@@ -11,5 +11,7 @@ namespace bem.ders.Models
         public string Name { get; set; }
         public int HourPerWeek { get; set; }    
         public List<Person> Persons { get; set; }
+
+       
     }
 }

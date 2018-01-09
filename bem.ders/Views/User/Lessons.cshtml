@@ -1,0 +1,27 @@
+﻿@model List<bem.ders.Models.Lesson>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lessons</title>
+</head>
+<body>
+    <div>
+        <ul>
+            
+            @foreach (var item in Model)
+            {
+                <li>@item.Name</li>
+
+            }
+            
+        </ul>
+       
+    </div>
+</body>
+</html>
